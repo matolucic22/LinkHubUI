@@ -1,4 +1,7 @@
 ﻿List of Tasks
 
-1.Create solutions of all prjects - In progress
-2.BOL with Entity
+1.Create solutions of all prjects - Completed
+2.BOL with Entity - Completed
+3.Add connection string in UI from entiti(BOL) - Completed
+4.Create areas in MVC
+a.Common
