@@ -1,0 +1,4 @@
+﻿List of Tasks
+
+1.Create solutions of all prjects - In progress
+2.BOL with Entity
