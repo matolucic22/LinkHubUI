@@ -3,5 +3,11 @@
 1.Create solutions of all prjects - Completed
 2.BOL with Entity - Completed
 3.Add connection string in UI from entiti(BOL) - Completed
-4.Create areas in MVC
-a.Common
+4.Create areas in MVC(arch-modules): - Completed
+	a.Common-bez logina
+	b.Admuin
+	c.User
+	d.Security
+5.Create all controllers in Respective Areas - Completed
+6.Add Default index views - Completed
+7.Add Bootstrap
