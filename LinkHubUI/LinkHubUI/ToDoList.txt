@@ -10,4 +10,4 @@
 	d.Security
 5.Create all controllers in Respective Areas - Completed
 6.Add Default index views - Completed
-7.Add Bootstrap
+7.Add Bootstrap	- In Progress
