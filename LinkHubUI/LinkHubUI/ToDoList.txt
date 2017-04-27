@@ -10,4 +10,15 @@
 	d.Security
 5.Create all controllers in Respective Areas - Completed
 6.Add Default index views - Completed
-7.Add Bootstrap	- In Progress
+7.Add Bootstrap	- Completed
+8.Create BrowseUrl View - Completed
+9.Create Common Layout - Completed
+10.Create DAL - Completed
+  a. Add UrlDb - Completed
+11.Create BLL - Completed
+  a. Add UrlBs - Completed
+12.Update BrowseUrl Controller - Completed
+13.Update BrowseUrl View - Completed
+14.Sorting - Completed
+15.Paging - In Progress
+16.ListCategory, ListUser with sorting and paging
