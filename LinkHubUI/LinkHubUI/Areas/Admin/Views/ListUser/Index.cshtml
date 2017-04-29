@@ -1,7 +1,51 @@
-﻿
+﻿@model IEnumerable<BOL.tbl_User>
+
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>List User</h2>
+<h2>Users</h2>
+
+<table class="table">
+    <tr>
+        <!--Header-->
+        <th>
+            @Html.ActionLink("UserEmail", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "UserEmail", page = (ViewBag.Page == null ? "1" : ViewBag.Page) })<!--if SO==null then Asc, if else Asc then Desc else Asc-->
+
+        </th>
+
+        <th>
+            @Html.ActionLink("Role", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc")), SortBy = "Role", page = (ViewBag.Page == null ? "1" : ViewBag.Page) })<!--if SO==null then Asc, if else Asc then Desc else Asc-->
+        </th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+        </tr>
+    }
+
+</table>
+@{
+    double TotalPage = @ViewBag.TotalPages;
+}
+@for (int i = 1; i <= TotalPage; i++)
+{
+    if (i == ViewBag.Page)
+    {
+        <b> @Html.ActionLink(i.ToString() + "  ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder == "Asc" ? "Desc" : "Asc"), SortBy = (ViewBag.SortBy == null ? "UserEmail" : ViewBag.SortBy), Page = i })</b>
+    }
+    else
+    {
+        @Html.ActionLink(i.ToString() + "  ", "Index", new { SortOrder = (ViewBag.SortOrder == null ? "Asc" : ViewBag.SortOrder == "Asc" ? "Desc" : "Asc"), SortBy = (ViewBag.SortBy == null ? "UserEmail" : ViewBag.SortBy), Page = i })
+
+    }
+
+}
 

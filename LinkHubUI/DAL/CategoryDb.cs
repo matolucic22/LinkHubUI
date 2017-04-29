@@ -16,28 +16,28 @@ namespace DAL
             db = new LinkHubDbEntities();
         }
 
-        public IEnumerable<tbl_Url> GetALL()
+        public IEnumerable<tbl_Category> GetALL()
         {
-            return db.tbl_Url.ToList();
+            return db.tbl_Category.ToList();
         }
 
-        public tbl_Url GetByID(int Id)
+        public tbl_Category GetByID(int Id)
         {
-            return db.tbl_Url.Find(Id);
+            return db.tbl_Category.Find(Id);
         }
-        void Insert(tbl_Url url)
+        void Insert(tbl_Category url)
         {
-            db.tbl_Url.Add(url);
+            db.tbl_Category.Add(url);
             Save();
         }
 
         void Delete(int Id)
         {
-            tbl_Url url = db.tbl_Url.Find(Id);
-            db.tbl_Url.Remove(url);
+            tbl_Category url = db.tbl_Category.Find(Id);
+            db.tbl_Category.Remove(url);
             Save();
         }
-        void Update(tbl_Url url)
+        void Update(tbl_Category url)
         {
             db.Entry(url).State = System.Data.Entity.EntityState.Modified;
         }

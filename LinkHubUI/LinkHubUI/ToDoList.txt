@@ -20,5 +20,10 @@
 12.Update BrowseUrl Controller - Completed
 13.Update BrowseUrl View - Completed
 14.Sorting - Completed
-15.Paging - In Progress
-16.ListCategory, ListUser with sorting and paging
+15.Paging - Completed
+16.ListCategory, ListUser with sorting and paging - Completed
+17.CreateCategory & Create SubmitUrl Controller - Completed
+18.Form Validations in BOL for CreateCategory - Completed
+19.Form Validations in BOL for SubmitUrl - Completed
+20.Custom validations in BOL for SubmitUrl - Completed - In Progress - zavrsi - 5.17.
+21.Approve URLs - In Progress

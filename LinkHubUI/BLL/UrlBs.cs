@@ -25,23 +25,23 @@ namespace BLL
         {
             return db.tbl_Url.Find(Id);
         }
-        void Insert(tbl_Url url)
+        public void Insert(tbl_Url url)
         {
             db.tbl_Url.Add(url);
             Save();
         }
 
-        void Delete(int Id)
+        public void Delete(int Id)
         {
             tbl_Url url = db.tbl_Url.Find(Id);
             db.tbl_Url.Remove(url);
             Save();
         }
-        void Update(tbl_Url url)
+        public void Update(tbl_Url url)
         {
             db.Entry(url).State = System.Data.Entity.EntityState.Modified;
         }
-        void Save()
+        public void Save()
         {
             db.SaveChanges();
         }

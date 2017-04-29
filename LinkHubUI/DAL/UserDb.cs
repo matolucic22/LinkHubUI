@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class UserDb
+    public class UserDb
     {
         private LinkHubDbEntities db;
 
@@ -16,28 +16,28 @@ namespace DAL
             db = new LinkHubDbEntities();
         }
 
-        public IEnumerable<tbl_Url> GetALL()
+        public IEnumerable<tbl_User> GetALL()
         {
-            return db.tbl_Url.ToList();
+            return db.tbl_User.ToList();
         }
 
-        public tbl_Url GetByID(int Id)
+        public tbl_User GetByID(int Id)
         {
-            return db.tbl_Url.Find(Id);
+            return db.tbl_User.Find(Id);
         }
-        void Insert(tbl_Url url)
+        void Insert(tbl_User url)
         {
-            db.tbl_Url.Add(url);
+            db.tbl_User.Add(url);
             Save();
         }
 
         void Delete(int Id)
         {
-            tbl_Url url = db.tbl_Url.Find(Id);
-            db.tbl_Url.Remove(url);
+            tbl_User url = db.tbl_User.Find(Id);
+            db.tbl_User.Remove(url);
             Save();
         }
-        void Update(tbl_Url url)
+        void Update(tbl_User url)
         {
             db.Entry(url).State = System.Data.Entity.EntityState.Modified;
         }
