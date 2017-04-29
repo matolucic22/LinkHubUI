@@ -26,4 +26,6 @@
 18.Form Validations in BOL for CreateCategory - Completed
 19.Form Validations in BOL for SubmitUrl - Completed
 20.Custom validations in BOL for SubmitUrl - Completed - In Progress - zavrsi - 5.17.
-21.Approve URLs - In Progress
+21.Adding BaseClasses - In Progress-Zavrsi(svima dodaj jos kao u Adminu Base)
+22.ApproveUrls And UserRegistration - InProgress
+23.Authentication Filter in Global File

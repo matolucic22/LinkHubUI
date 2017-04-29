@@ -9,7 +9,7 @@ namespace LinkHubUI.Areas.Admin.Controllers
 {
     public class BaseAdminController : Controller
     {
-        protected AdminBs objBs;
+        protected AdminBs objBs;//Napravi to i za Common, Security, User
         public BaseAdminController()
         {
             objBs = new AdminBs();
