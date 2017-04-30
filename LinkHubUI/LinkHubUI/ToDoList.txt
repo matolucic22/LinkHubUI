@@ -27,5 +27,5 @@
 19.Form Validations in BOL for SubmitUrl - Completed
 20.Custom validations in BOL for SubmitUrl - Completed - In Progress - zavrsi - 5.17.
 21.Adding BaseClasses - In Progress-Zavrsi(svima dodaj jos kao u Adminu Base)
-22.ApproveUrls And UserRegistration - InProgress
-23.Authentication Filter in Global File
+22.ApproveUrls And UserRegistration - InProgress (Odradi User reg i dodaj u approve unique 5.19.)
+23.Authentication Filter in Global File - In Progress
