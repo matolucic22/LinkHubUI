@@ -28,4 +28,7 @@
 20.Custom validations in BOL for SubmitUrl - Completed - In Progress - zavrsi - 5.17.
 21.Adding BaseClasses - In Progress-Zavrsi(svima dodaj jos kao u Adminu Base)
 22.ApproveUrls And UserRegistration - InProgress (Odradi User reg i dodaj u approve unique 5.19.)
-23.Authentication Filter in Global File - In Progress
+23.Authentication Filter in Global File - Completed
+24.Create Custom Membership Providers-Completed(We need to add two dlls S.Configuration and System.Web.Authentification)
+25.Autorization - In Progress
+26.Create Custom Role Providers 

@@ -17,6 +17,11 @@ namespace LinkHubUI.Areas.Security.Controllers
             return View();
         }
 
+        public ActionResult SignOut()
+        {
+            return RedirectToAction("Index", "Home", new { area = "Common" });
+        }
+
         [HttpPost]
         public ActionResult SingIn(tbl_User user)
         {

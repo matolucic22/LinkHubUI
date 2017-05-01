@@ -11,8 +11,8 @@ namespace LinkHubUI.Areas.User.Controllers
     public class URLController : Controller
     {
         public UrlBs objBs;
-        private CategoryBs objectCatBs;
-        private UserBs objUserBs;
+        public CategoryBs objectCatBs;
+        public UserBs objUserBs;
 
         public URLController()
         {
@@ -38,6 +38,8 @@ namespace LinkHubUI.Areas.User.Controllers
             //ViewBag.CategoryId = new SelectList(db.tbl_Category, "CategoryId", "CategoryName");//table, selected value-value field, displaied value-text field
             try
             {
+                myUrl.IsApproved = "P";
+                myUrl.UserId=objBs.userBs
                 if(ModelState.IsValid)
                 {
                     objBs.Insert(myUrl);
