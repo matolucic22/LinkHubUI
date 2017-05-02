@@ -34,12 +34,14 @@ namespace LinkHubUI.Areas.User.Controllers
         [HttpPost]
         public ActionResult Create(tbl_Url myUrl)
         {
+
+
             //LinkHubDbEntities db = new LinkHubDbEntities();
             //ViewBag.CategoryId = new SelectList(db.tbl_Category, "CategoryId", "CategoryName");//table, selected value-value field, displaied value-text field
             try
             {
                 myUrl.IsApproved = "P";
-                myUrl.UserId=objBs.userBs
+                myUrl.UserId = objUserBs.GetALL().Where(x => x.UserEmail == User.Identity.Name).FirstOrDefault().UserId;
                 if(ModelState.IsValid)
                 {
                     objBs.Insert(myUrl);
